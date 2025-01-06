@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View All Lessons</title>
+</head>
+<body>
+    <h1>Lessons/Lesson</h1>
+    <ul>
+        {% for lesson in lessons %}
+            <li>
+                <h1>{{ lesson.title }}</h1>
+                <p>{{ lesson.content }}</p>
+            </li>
+        {% endfor %}
+    </ul>
+    <br>
+    <a href="/">Go Back</a>
+</body>
+</html>
